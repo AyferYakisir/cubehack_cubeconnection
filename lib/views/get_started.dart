@@ -15,7 +15,6 @@ class GetStartedPage extends StatelessWidget {
       child: BlocListener<GetStartedBloc, GetStartedState>(
         listener: (context, state) {
           if (state is GetStartedNavigating) {
-            // Örneğin login sayfasına yönlendir
             Navigator.pushReplacementNamed(context, '/login');
           }
         },
@@ -24,14 +23,16 @@ class GetStartedPage extends StatelessWidget {
           body: SafeArea(
             child: Column(
               children: [
+                // Üst görsel (tokalaşan adamlar ve logo içeriyor)
                 Expanded(
                   flex: 5,
                   child: Image.asset(
-                    'assets/images/get_started_top.jpeg',
+                    'assets/images/get_started_background.jpeg',
                     fit: BoxFit.cover,
                     width: double.infinity,
                   ),
                 ),
+                // Alt kısım
                 Expanded(
                   flex: 5,
                   child: Container(
@@ -46,12 +47,6 @@ class GetStartedPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Image.asset(
-                          'assets/images/cube_icon.png',
-                          width: 40,
-                          height: 40,
-                        ),
-                        const SizedBox(height: 8),
                         const Text(
                           'cubeconnect',
                           style: TextStyle(
