@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351246658475",
+    "project_id": "cubeconnect-f548b",
+    "storage_bucket": "cubeconnect-f548b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351246658475:android:8ce511890b7c9442c000ee",
+        "android_client_info": {
+          "package_name": "com.example.cubeincubation_mobile_hackathon_2025"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Hp3vrKbhuVbKBTffmYWopbAjZpiA-iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
